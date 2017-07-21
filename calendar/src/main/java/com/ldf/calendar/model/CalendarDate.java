@@ -93,7 +93,7 @@ public class CalendarDate implements Serializable{
 
 	@Override
 	public String toString() {
-		return year + "-" + month + "-" + day;
+		return year + "-" + String.format("%02d",month)  + "-" + String.format("%02d",day);
 	}
 
 	public int getYear() {
